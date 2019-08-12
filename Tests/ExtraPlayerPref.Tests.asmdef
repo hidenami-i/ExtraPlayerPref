@@ -1,0 +1,17 @@
+{
+    "name": "ExtraPlayerPref.Tests",
+    "references": [
+        "ExtraPlayerPref",
+        "IMDB4Unity"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
