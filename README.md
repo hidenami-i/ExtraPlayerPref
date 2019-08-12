@@ -39,26 +39,6 @@ ExtraPlayerPrefRepository.Instance.SetVector3("vector3", Vector3.up);
 
 ExtraPlayerPrefRepository.Instance.Save();ExtraPlayerPrefRepository.Instance.Load();
 
-// gets the value
-ExtraPlayerPrefRepository.Instance.GetStringOrDefault("string");
-ExtraPlayerPrefRepository.Instance.GetIntOrDefault("int");
-ExtraPlayerPrefRepository.Instance.GetFloatOrDefault("float");
-ExtraPlayerPrefRepository.Instance.GetBoolOrDefault("bool");
-ExtraPlayerPrefRepository.Instance.GetVector2OrDefault("vector2");
-ExtraPlayerPrefRepository.Instance.GetVector3OrDefault("vector3");
-ExtraPlayerPrefRepository.Instance.GetClassOrDefault("class", Player.Default());
-
-// sets the value
-ExtraPlayerPrefRepository.Instance.SetString("string", "animal", "category");
-ExtraPlayerPrefRepository.Instance.SetInt("int", int.MaxValue, "category");
-ExtraPlayerPrefRepository.Instance.SetFloat("float", float.MaxValue, "category");
-ExtraPlayerPrefRepository.Instance.SetBool("bool", true, "category");
-ExtraPlayerPrefRepository.Instance.SetClass("class", new Player(1, "animal", DateTime.Now), "category");
-ExtraPlayerPrefRepository.Instance.SetVector2("vector2", Vector2.up);
-ExtraPlayerPrefRepository.Instance.SetVector3("vector3", Vector3.up);
-
-ExtraPlayerPrefRepository.Instance.Save();
-
 [Serializable]
 class Player
 {
