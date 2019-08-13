@@ -5,7 +5,7 @@ Extra Unity's PlayerPref.
 ## Install
 Add the following line on manifest.json file.
 ```json
-"com.hidenami-i.extraplayerpref": "https://github.com/hidenami-i/IMDB4Unity.git",
+"com.hidenami-i.extraplayerpref": "https://github.com/hidenami-i/ExtraPlayerPref.git",
 "com.hidenami-i.imdb4unity": "https://github.com/hidenami-i/IMDB4Unity.git",
 "com.hidenami-i.unityextensions": "https://github.com/hidenami-i/UnityExtensions.git#1.0.0",
 ```
