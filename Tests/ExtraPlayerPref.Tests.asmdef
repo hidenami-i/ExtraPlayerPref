@@ -2,7 +2,8 @@
     "name": "ExtraPlayerPref.Tests",
     "references": [
         "ExtraPlayerPref",
-        "IMDB4Unity"
+        "IMDB4Unity",
+        "Repository4Unity"
     ],
     "includePlatforms": [
         "Editor"

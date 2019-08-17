@@ -7,13 +7,13 @@ using UnityExtensions;
 namespace ExtraPlayerPref
 {
 	[Serializable]
-	public sealed partial class ExtraPlayerPrefRepository : RepositoryBase<ExtraPlayerPrefEntity, ExtraPlayerPrefRepository>
+	public sealed partial class ExtraPlayerPrefRepository : DatabaseRepositoryBase<ExtraPlayerPrefEntity, ExtraPlayerPrefRepository>
 	{
 		[SerializeField] private List<ExtraPlayerPrefEntity> data = new List<ExtraPlayerPrefEntity>();
 
 		protected override List<ExtraPlayerPrefEntity> EntityList => data;
 
-		public override IDatabase Insert(ExtraPlayerPrefEntity entity) {
+		public override void Insert(ExtraPlayerPrefEntity entity) {
 			throw new NotSupportedException("insert function is not supported.");
 		}
 

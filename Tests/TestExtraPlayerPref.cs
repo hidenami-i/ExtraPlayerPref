@@ -34,7 +34,7 @@ namespace ExtraPlayerPref.Tests
 
 			ExtraPlayerPrefRepository.Instance.Save();
 
-			deleteCategoryButton.onClick.AddListener(() => { ExtraPlayerPrefRepository.Instance.DeleteAllBy(x => x.Category == "category").Save(); });
+			deleteCategoryButton.onClick.AddListener(() => { ExtraPlayerPrefRepository.Instance.DeleteAllBy(x => x.Category == "category"); });
 			deletePlayerPrefButton.onClick.AddListener(() => { ExtraPlayerPrefRepository.Instance.DeleteContents(); });
 		}
 
