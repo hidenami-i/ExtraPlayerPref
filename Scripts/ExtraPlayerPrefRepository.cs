@@ -7,7 +7,7 @@ using UnityExtensions;
 namespace ExtraPlayerPref
 {
 	[Serializable]
-	public sealed partial class ExtraPlayerPrefRepository : DBRepositoryBase<ExtraPlayerPrefEntity, ExtraPlayerPrefRepository>
+	public sealed partial class ExtraPlayerPrefRepository : RepositoryBase<ExtraPlayerPrefEntity, ExtraPlayerPrefRepository>, IDatabase
 	{
 		[SerializeField] private List<ExtraPlayerPrefEntity> data = new List<ExtraPlayerPrefEntity>();
 
@@ -17,7 +17,7 @@ namespace ExtraPlayerPref
 			throw new NotSupportedException("Insert function is not supported.");
 		}
 
-		public override string Schema => "PlayerPref";
+		public string Schema => "PlayerPref";
 
 		/// <summary>
 		/// Gets int value by key.
